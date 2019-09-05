@@ -1,3 +1,442 @@
-body {
-	background-color: yellow;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800&display=swap');
+
+body, html{
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
 }
+
+
+
+h1 {
+	font-weight: 800;
+	font-size: 50px;
+
+
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+h4 {
+
+	font-weight: bold;
+	font-size: 20px;
+
+
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 40px;
+}
+
+p {
+
+font-weight: lighter;
+font-size: 30px;
+margin: 30px 0;	
+}
+
+
+.wrapper {
+width: 960px;
+margin: 0 auto;
+
+}
+
+.hero-banner {
+      background-color: #007fff;
+      height: 100vh;
+      padding: 50px 20px;
+	  box-sizing: border-box; 
+      position: relative;
+      overflow: hidden;
+
+}
+
+
+.hero-banner h1 {
+	color: white;
+	margin: 14px 0 20px;
+}
+
+.hero-banner h3 {
+	color: white;
+	margin: 14px 0 35px;
+}
+
+.hero-banner h4,
+.hero-banner h4 a {
+	color: white;
+	margin: 0;
+}
+
+
+
+.charachter1 {
+	background: url(img/circle-guy.png) no-repeat 0 0;
+	background-size: 100%;
+	width: 350px;
+	height: 350px;
+	position: absolute; top: 117px; right: 350px;
+
+}
+
+
+.charachter2 {
+	background: url(img/eish-guy.png) no-repeat 0 0;
+	background-size: 100%; 
+	width: 230px;
+	height: 300px;
+    position: absolute; top: 275px; right: 289px;
+	
+}
+
+
+.charachter3 {
+	background: url(img/hat-guy.png) no-repeat 0 0;
+	background-size: 100%;
+	width: 200px;
+	height: 260px;
+	position: absolute; top: 280px; right: 530px;
+}
+
+a.cta,
+button.cta{
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	background: #007fff;
+	display: inline-block;
+	box-shadow: 0 0 0 10px rgba(0,127,255,.15);
+	padding: 20px 30px;
+	border-radius: 10px;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+	border:none;
+	margin-top: 35px;
+}
+
+a.cta:active,
+button.cta:active {
+	opacity: .7;
+
+}
+
+a.cta.alt,
+button.cta.alt{
+      background-color: #ffd400;
+      box-shadow: 0 0 0 10px rgba(0,0,0,.15);
+
+}
+
+
+nav {
+	height: 100px;
+	background-color: white;
+	box-shadow: 0 5px 8px rgba(0, 0, 0,.2);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav .logo {
+	display: block;
+	width: 150px;
+	height: 40px;
+	position: absolute; top: 50%;
+	background-size: 100%;
+	margin-top: -20px;
+	margin-left: 30px;
+	background: url(img/logo.png) no-repeat 0 0;
+	background-size: 100%;
+	overflow: hidden; 
+	text-indent: -9999px;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+} 
+
+nav ul li {
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: right;
+}
+
+nav ul li a {
+	display: block;
+	color: black;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-decoration: none;
+	padding: 35px 10px;
+	margin-right: 30px;
+
+}
+
+
+.more-info {
+	text-align: center;
+
+}
+
+.more-info h2 {
+	margin-top: 50px;
+
+}
+
+.more-info p {
+	margin: 10px;
+
+}
+
+.highlight {
+	text-decoration: underline;
+	display: inline-block;
+}
+
+
+
+.sep {
+	width: 470px;
+	height: 2px;
+	background-color: #111111;
+	margin: 70px auto;
+
+
+}
+
+.story h3 {
+	font-size: 40px;
+}
+
+
+.nb-list {
+	width: 470px;
+	background-color: #ededed;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	float: left;
+	margin: 0 20px 20px 0 ;
+	position: relative;
+
+}
+
+.nb-list li {
+	height: 70px;
+	border-radius: 10px;
+	font-size: 40px;
+	color: white;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 20px;
+	padding: 5px 20px;
+	box-sizing: border-box;
+}
+
+.nb-list li.blue{background-color: #007fff;}
+.nb-list li.gray{background-color: rgba(0, 0, 0, .1);}
+.nb-list li.yellow {
+
+	background-color: #ffd400;
+	color: #111111;
+
+}
+.nb-list li.red{background-color: #ff3300;}
+.nb-list li.pink{background-color: #ffadf9;}
+.nb-list li.salmon{background-color: #fa8072;}
+.nb-list li.yellow{background-color: #ffd400;}
+
+.nb-list li.dragging {
+	position: absolute;
+    top: 70px;
+    left: 70px;
+    right: -30px;
+    transform: rotate(6deg);
+    box-shadow: 0 2px 14px rgba(0,0,0,.3);
+
+}
+
+.nb-list li.dragging:after {
+	    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url(img/clicker.png) no-repeat 0 0;
+    background-size: 100%;
+    bottom: -60px;
+    left: 60%;
+        transform: rotate(30deg);
+}
+
+
+.gang-img {
+	display: block;
+	margin: 0 auto;
+}
+
+footer {
+	text-align: center;
+	color: rgba(0, 0, 0, .5);
+	font-size: 20px;
+	margin: 85px 0 45px;
+
+}
+
+
+.popup {
+	display: none;
+	position: fixed;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.popup .blanket {
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.popup.show {
+	display: block;
+}
+
+.popup .content {
+	box-sizing: border-box;
+	position: absolute;
+	padding: 30px 40px;
+	width: 960px;
+	height: 540px;
+	background-color: white;
+	text-align: center;
+	left: 50%;
+		top: 50%;
+	margin-left: -480px;
+
+	margin-top: -270px;
+
+
+}
+
+.popup .close {
+	position:absolute;
+	width: 50px;
+	height: 50px;
+	background: #ff3300 url(img/close.png) no-repeat center center;
+	background-size: 100%;
+	border-radius: 50px;
+	border:none;
+	outline: none;
+	overflow: hidden;
+	top: -20px;
+	right: -20px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+
+.popup .row {
+
+}
+
+.popup .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.popup .item {
+	float: left;
+	width: 415px;
+	margin-left: 40px;
+	text-align: left;
+}
+
+.popup .item:first-child {
+	margin-left: 0;
+}
+
+.popup .item label {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px;
+
+}
+
+.popup .item input[type="text"] {
+	display: block;
+	font-size: 30px;
+	border: 2px solid #111;
+	height: 70px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 15px 20px;
+
+
+}
+
+.popup h2{
+	margin: 10px 0 20px;
+}
+.popup .cta {
+	margin-top: 40px;
+
+}
+
+/*
+
+
+	<div class="popup">
+   	   <div class="blanket"></div>
+
+   	   <div class="content"><h2>Fill in your details</h2>
+
+   	   	<form action="">
+
+   	   		<div class="item">
+   	   		<label>Your First Name</label>
+   	   		<input type="text" Placeholder="Awesome" value="Shirley">
+   	   		</div>
+
+   	   		<div class="item">
+   	   		<label>Your last Name</label>
+   	   		<input type="text" Placeholder="Circleface">
+   	   		</div>
+
+   	   		<div class="item">
+   	   		<label>Your Favourite color</label>	
+   	   		<input type="text" Placeholder="Pink">
+   	   		</div>
+
+   	   		<div class="item">
+   	   		<label>Your Favourite food</label>
+   	   		<input type="text" Placeholder="Apple Pie">
+   	   		</div>
+			
+			<button class="cta">I want in!</button>
+
+   	   	</form>
+
+   	   </div>
+		<button class="close">Close</button>
+   </div>
+
+*/
